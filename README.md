@@ -1,3 +1,6 @@
+![LuaForNEM](https://user-images.githubusercontent.com/81382687/233855360-e894efbb-b39e-4e24-b7bb-0fcdef48f058.png)
+
+
 # Lua for NEM Documentation
 ## Intro
 Welcome to Lua for NEM Documentation
