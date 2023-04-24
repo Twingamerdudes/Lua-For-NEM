@@ -61,6 +61,78 @@ Called whenever a user clicks a button with a list.
 Params: int id.
 
 Called when a button with no list is pressed.
+
+## Object properties you can change or get
+### Position
+Type: float[]
+
+The position of a object.
+### Rotation
+Type: float[]
+
+The rotation of a object.
+### Scale
+Type: float[]
+
+The scale of a object.
+### Character
+Type: string
+
+The current character a character is.
+
+### Corpus
+Type: int
+
+The number of corpus a character  has.
+### Speed
+Type: float
+
+How fast a character accelerates, and decelerates. Can also be it's max speed.
+
+Notes: If you are setting it, property 1 must be the type of speed (can be acceleration, deceleration, or max). If getting the first arg should be the type of speed as well.
+
+Example: `ChangeProperty(Player, {"max", 16}, "speed")`
+### Strength
+Type: int
+
+How strong a character is.
+### Lethality
+Type: int
+
+How lethal a character is
+### Fall damage
+Type: bool
+
+If the character is affected by fall damage.
+### Target
+Type: string
+
+The character's current target (gameObject name)
+### Gravity
+Type: bool
+
+If the character is affected by gravity or not.
+
+### State
+Type: Bool
+
+Determines the state of the character. States can be ragdoll or dead state.
+
+Notes: If setting state, property 1 must be the type. If getting, argument 1 must be the type.
+
+Example: `ChangeProperty(Player, {"ragdoll", true}, "state")`
+
+## World properties you can change or get.
+### Time Scale
+Type: float
+
+How fast time goes.
+
+### Gravity
+Type: float
+
+The gravity scale of the world.
+
 ## Functions
 ### Godmode
 Params: string object name
@@ -232,37 +304,6 @@ Params: string message
 Notifys the user in game with you're message
 
 Usage: `Notify("This is a notification")`
-
-## Properties
-postion: float[]
-
-rotation: float[]
-
-scale: float[]
-
-corpus (requires object to have combatant base): int
-
-speed (requires object to have combatant base), first property must be one of these types:
-* acceleration
-* deceleration
-* max
-
-Example: `ChangeProperty(Player, {"max", 16}, "speed")`
-
-gravity: bool
-
-strength: int
-
-lethality: int
-
-fall damage: bool
-
-target: string
-
-state, first property must be one of the types below:
-* ragdoll
-* dead
-Example: `ChangeProperty(Player, {"ragdoll", true}, "state")`
 
 ## Music strings
 ```lua
