@@ -8,7 +8,7 @@ Here you will find all functions and variables that you can use in you're mod. T
 ## Setup
 First drag the Assembly-CSharp.dll and MoonSharp.Interpreter.dll into (your M:PN folder)/Madness Project Nexus_Data/Managed folder.
 
-Then in you're custom stuff folder (if you do not have it, then you will need to install NEM, then go back to step 1) create a lua and cutscene's folder.
+Then in you're custom stuff folder (if you do not have it, then you will need to install NEM, then go back to step 1) create a lua, cutscenes, and models folder inside of it.
 
 Inside your new lua folder, make a folder with you're mod name and then a main.lua file inside that mod folder.
 
