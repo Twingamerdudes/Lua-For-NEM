@@ -1,10 +1,9 @@
 ![LuaForNEM](https://user-images.githubusercontent.com/81382687/233855360-e894efbb-b39e-4e24-b7bb-0fcdef48f058.png)
 
 
-# Lua for NEM Documentation
+# Lua for NEM
 ## Intro
-Welcome to Lua for NEM Documentation
-Here you will find all functions and variables that you can use in you're mod. There will also be a quick setup guide for making you're first lua mod.
+Welcome to Lua for NEM. A mod that adds lua to NEM along with some cool other features.
 ## Setup
 First drag the Assembly-CSharp.dll and MoonSharp.Interpreter.dll into (your M:PN folder)/Madness Project Nexus_Data/Managed folder.
 
