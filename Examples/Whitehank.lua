@@ -9,8 +9,6 @@ function Start()
 end
 
 function Update()
-    --CreateMenuUI_List("Test", "Cool test", {"Test"}, {"Test", "Another Test"}, "corpus/Corpus_Sirus")
-    --ChangeProperty(Player, {2}, "corpus")
     if KeyDown("Semicolon") then
         if slowedTime then
             slowedTime = false
