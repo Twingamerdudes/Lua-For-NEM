@@ -1,17 +1,11 @@
 local slowedTime = false
 
 function Start()
-    --ChangeProperty(Player, {"Hank W Wimbleton"}, "character")
-    --local newSpeed = GetProperty(Player, "speed", {"max"}) * 2
-    --ChangeProperty(Player, {"max", newSpeed}, "speed")
-    --ChangeProperty(Player, {999}, "strength")
-    --ChangeProperty(Player, {999}, "lethality")
-end
-
-function Callback(ctype)
-    if ctype == "corpus" and GetProperty(Player, "corpus") < 3 then
-        PlayCutscene("test.json")
-    end
+    ChangeProperty(Player, {"Hank W Wimbleton"}, "character")
+    local newSpeed = GetProperty(Player, "speed", {"max"}) * 2
+    ChangeProperty(Player, {"max", newSpeed}, "speed")
+    ChangeProperty(Player, {999}, "strength")
+    ChangeProperty(Player, {999}, "lethality")
 end
 
 function Update()
