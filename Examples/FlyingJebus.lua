@@ -19,7 +19,6 @@ function Update()
         else
             ChangeProperty(Player, {GetProperty(Player, "position")[1], GetProperty(Player, "position")[2] + FlySpeed * DeltaTime, GetProperty(Player, "position")[3]}, "position")
         end
-        --SpawnCharacter("Grunt", {-168.12, 0.38, 0.26}, false)
     else
         ChangeProperty(Player, {true}, "gravity")
     end
