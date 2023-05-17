@@ -10,8 +10,6 @@ function Callback(ctype, args)
     if ctype == "room" then
         roomNum = roomNum + 1
         local midpoint = CalculateMidPoint(RoomBorderX, RoomBorderZ)
-        Notice(roomNum.." "..midpoint[2])
-        Notice((midpoint[1] + midpoint[1] + midpoint[1]) + (50 * roomNum))
         local character = SpawnCharacter("Dr. Christoff", {(midpoint[1] + midpoint[1] + midpoint[1]) + (50 * roomNum), 0.05, midpoint[2]}, true)
         ChangeProperty(character, {Player}, "target")
     end
