@@ -1,0 +1,30 @@
+﻿{
+  "FullName": "Invasion",
+  "ShortName": "Invasion",
+  "Description": "The <color=yellow>Nexus Core</color> have gotten intel that the employees they are firing plan to kill Rich, two Nexus Core guards have been tasked to go into the <color=yellow>Power Station</color> and kill the employees before they can kill Rich.",
+  "Tier": 4,
+  "LoadScreenTips": [
+    "They might know something is coming..."
+  ],
+  "MusicDefault": [
+    "event:/Music/Cheshyre/Waltzer White"
+  ],
+  "RequiredCharacters": [
+    {
+      "MyCharacter": "Nexus1_Agent",
+      "DefaultLoadout": "None",
+      "DefaultWardrobe": "None"
+    },
+    {
+      "MyCharacter": "Nexus5_Engineer",
+      "DefaultLoadout": "None",
+      "DefaultWardrobe": "None"
+    }
+  ],
+  "BonusCharacters": [],
+  "Prize_Loadout": [],
+  "Prize_Wardrobe": [
+    "S_Ex_QM"
+  ],
+  "WipeSquadAfterVictory": 1
+}

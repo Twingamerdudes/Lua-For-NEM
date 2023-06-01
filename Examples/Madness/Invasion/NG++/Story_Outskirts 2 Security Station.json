@@ -1,0 +1,1238 @@
+{
+  "Security_Room1": {
+    "Characters": {
+      "C--1630516067": {
+        "myType": "Rich_Arena"
+      },
+      "C--882480391": {
+        "myFaction": 11,
+        "spawnChatter": {
+          "myChatter": "Close the outer perimeter! <b>Don't let him escape!</b>",
+          "secondDelay": 1.0,
+          "amNarrative": true,
+          "playInCombat": true
+        },
+        "myType": "Merc2_Sniper",
+        "WipeDefaultHeld": true,
+        "itemsHeld": [
+          "R_Shot_DblHunterS",
+          "None"
+        ]
+      },
+      "C--1934985146": {
+        "myFaction": 11,
+        "myType": "Merc2_Sniper",
+        "WipeDefaultHeld": true,
+        "itemsHeld": [
+          "R_MERC_L RETRO",
+          "None"
+        ]
+      },
+      "C--1496999202": {
+        "myFaction": 11,
+        "spawnChatter": {
+          "myChatter": "\n",
+          "secondDelay": 1.0,
+          "amNarrative": false,
+          "playInCombat": true
+        },
+        "myType": "Merc0_Grunt",
+        "itemsHeld": [
+          "M_Screwdriver",
+          "None"
+        ]
+      },
+      "C-1498128513": {
+        "myFaction": 11,
+        "spawnChatter": {
+          "myChatter": "\n",
+          "secondDelay": 1.0,
+          "amNarrative": false,
+          "playInCombat": true
+        },
+        "myType": "Merc0_Grunt",
+        "itemsHeld": [
+          "M_Wrench",
+          "None"
+        ]
+      },
+      "S-1978403725": {
+        "myFaction": 11,
+        "alertStatus": 2,
+        "spawnChatter": {
+          "myChatter": "You're in for it now, punk!",
+          "secondDelay": 1.0,
+          "amNarrative": false,
+          "playInCombat": true
+        },
+        "SecondsInRoomTilSpawn": 3.0,
+        "SpawnFrequencySlowdownMult": 1.0,
+        "MissionWaveStart": "THEY'RE ON STRIKE!",
+        "MissionWaveEnd": "Time to punch in!",
+        "Wave": {
+          "MaxSquadSize": 4,
+          "MaxUnitCount": 4,
+          "WeaponStock_RandomSeed": 471037,
+          "UnitTypes": [
+            {
+              "Type": "Merc0_Grunt_laborer",
+              "Total": 6,
+              "GenerationScale": 0.0
+            },
+            {
+              "Type": "Merc0_Grunt",
+              "Total": 6,
+              "GenerationScale": 0.0
+            },
+            {
+              "Type": "Merc1_Zerker",
+              "Total": 6,
+              "GenerationScale": 0.0
+            }
+          ],
+          "WeaponStock": [
+            {
+              "Count": 6,
+              "Loadout": "MERCs T3"
+            },
+            {
+              "Count": 6,
+              "Loadout": "MERCs T5"
+            },
+            {
+              "Count": 6,
+              "Loadout": "Melee T4"
+            }
+          ],
+          "Bosses": [
+            {
+              "Type": "Merc4_Sarge",
+              "Weapon": "R_Deagle",
+              "Sidearm": "None",
+              "Throwable": "None",
+              "Key": "None",
+              "Gear": []
+            }
+          ]
+        }
+      }
+    },
+    "Interactives": {
+      "I--42773635": {
+        "allPurposes": [
+          {
+            "Popup_Complete": [
+              "A timecard directory for the MERC workers tending to the <color=white>Outskirts Power Station</color>.\n\nAdditionally, <color=white>Rich</color> is circled in red with the words <color=yellow>\"New Hire\"</color> pointing to it."
+            ]
+          }
+        ]
+      },
+      "I--1324757452": {
+        "allPurposes": [
+          {
+            "Popup_Complete": [
+              "A manifest of records and purchase orders for replacement tools and parts going into the power station. The most recent shipment however was a box of placques for the new \"<color=white>Employee of the Month</color>\"."
+            ],
+            "Time_Goal": 4.0
+          }
+        ]
+      }
+    },
+    "Cutscenes": {},
+    "Lockers": {},
+    "Areas": {},
+    "Items": [],
+    "Entrances": {
+      "E-1745887898": {
+        "name": "door r1 / start",
+        "disableSpawn": false,
+        "VocationProhibited": 100,
+        "VocationRequirement": 100,
+        "SpawnPoints": 1,
+        "ExitPoints": 1
+      }
+    },
+    "NewCharacters":[
+      {
+        "myName": "Desk Guy",
+        "myFaction": 11,
+        "spawnChatter": {
+          "myChatter": "Hello there!",
+          "secondDelay": 0.2,
+          "amNarrative": false,
+          "playInCombat": true
+        },
+        "myType": "Merc2_Sniper",
+        "WipeDefaultHeld": true,
+        "itemsHeld": [
+          "R_MERC_L RETRO",
+          "None"
+        ],
+        "position": {
+          "x": 2.62,
+          "y": 28.34,
+          "z": 5.82
+        },
+        "rotation": {
+          "x": 180.0,
+          "y": 0.0,
+          "z": 180.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    ],
+    "Triggers":[
+      {
+        "name": "Cutscene Trigger",
+        "position":{
+          "x": -0.07,
+          "y": 28.34,
+          "z": -0.28
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "scale": {
+          "x": 5.0,
+          "y": 1000.0,
+          "z": 100.0
+        },
+        "LinkedObject": "Invasion",
+        "luaScript": "Invasion/setup"
+      }
+    ],
+    "NewSerials":[
+      {
+        "name": "deskguy",
+        "objectName": "Desk Guy"
+      }
+    ],
+    "NewCutscenes":[
+      {
+        "name": "Invasion",
+        "ActorSerials": [
+          "PSQUAD0",
+          "deskguy"
+        ],
+        "Steps": [
+          {
+            "ActorSerial": "deskguy",
+            "Blurb": "Wait a sec, you're the exterminators... EVERYONE RUN!"
+          },
+          {
+            "ActorSerial": "PLAYER",
+            "Blurb": "How did they know we were coming?!"
+          }
+        ]
+      }
+    ]
+  },
+  "Security_Room2": {
+    "Characters": {
+      "C--1987590633": {
+        "myFaction": 11,
+        "myType": "Merc0_Grunt",
+        "itemsHeld": [
+          "M_Pipewrench",
+          "None"
+        ]
+      },
+      "C-23943618": {
+        "myFaction": 11,
+        "spawnChatter": {
+          "myChatter": "He's heading straight for us! Punch him out!",
+          "secondDelay": 1.0,
+          "amNarrative": true,
+          "playInCombat": true
+        },
+        "myType": "Merc2_Sniper",
+        "WipeDefaultHeld": true,
+        "itemsHeld": [
+          "R_MERC_H RETRO",
+          "None"
+        ]
+      },
+      "C--9154819": {
+        "myFaction": 11,
+        "myType": "Merc2_Sniper",
+        "WipeDefaultHeld": true,
+        "itemsHeld": [
+          "R_MERC_L RETRO",
+          "None"
+        ]
+      },
+      "C--117846560": {
+        "myFaction": 11,
+        "myType": "Merc0_Grunt",
+        "itemsHeld": [
+          "R_Shot_Ultralite",
+          "None"
+        ]
+      },
+      "S-1277459359": {
+        "myFaction": 11,
+        "Wave": {
+          "MaxSquadSize": 3,
+          "MaxUnitCount": 6,
+          "WeaponStock_RandomSeed": 3389174,
+          "UnitTypes": [
+            {
+              "Type": "Merc0_Grunt",
+              "Total": 3,
+              "GenerationScale": 0.0
+            },
+            {
+              "Type": "Merc1_Zerker",
+              "Total": 1,
+              "GenerationScale": 0.468
+            }
+          ],
+          "WeaponStock": [
+            {
+              "Count": 2,
+              "Loadout": "Tools T3 (MERC)"
+            },
+            {
+              "Count": 2,
+              "Loadout": "Melee T4"
+            }
+          ]
+        }
+      }
+    },
+    "Interactives": {},
+    "Cutscenes": {},
+    "Lockers": {},
+    "Areas": {},
+    "Items": [],
+    "Entrances": {},
+    "NewCharacters":[
+      {
+        "myName": "Enemy 1",
+        "myFaction": 11,
+        "alertStatus": 2,
+        "target": "player",
+        "spawnChatter": {
+          "myChatter": "Get them!",
+          "secondDelay": 0.2,
+          "amNarrative": false,
+          "playInCombat": true
+        },
+        "myType": "Merc2_Sniper",
+        "WipeDefaultHeld": true,
+        "itemsHeld": [
+          "R_MERC_L RETRO",
+          "None"
+        ],
+        "position": {
+          "x": 57.71,
+          "y": 28.34,
+          "z": 3.91
+        },
+        "rotation": {
+          "x": 270.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      {
+        "myName": "Enemy 2",
+        "myFaction": 11,
+        "alertStatus": 2,
+        "target": "player",
+        "spawnChatter": {
+          "myChatter": "Make sure he's dead!",
+          "secondDelay": 0.2,
+          "amNarrative": false,
+          "playInCombat": true
+        },
+        "myType": "Merc2_Sniper",
+        "WipeDefaultHeld": true,
+        "itemsHeld": [
+          "R_MERC_L RETRO",
+          "None"
+        ],
+        "position": {
+          "x": 51.66,
+          "y": 28.34,
+          "z": 5.66
+        },
+        "rotation": {
+          "x": 180.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      {
+        "myName": "Enemy 3",
+        "myFaction": 11,
+        "alertStatus": 2,
+        "target": "player",
+        "spawnChatter": {
+          "myChatter": "\n",
+          "secondDelay": 0.2,
+          "amNarrative": false,
+          "playInCombat": true
+        },
+        "myType": "Merc2_Sniper",
+        "WipeDefaultHeld": true,
+        "itemsHeld": [
+          "R_MERC_L RETRO",
+          "None"
+        ],
+        "position": {
+          "x": 49.4,
+          "y": 28.34,
+          "z": -0.09
+        },
+        "rotation": {
+          "x": 270.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    ],
+    "Triggers":[
+      {
+        "name": "Cutscene Trigger 2",
+        "position":{
+          "x": 41.69,
+          "y": 28.34,
+          "z": 3.89
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "scale": {
+          "x": 10.0,
+          "y": 1000.0,
+          "z": 100.0
+        },
+        "LinkedObject": "Kill him"
+      }
+    ],
+    "NewSerials":[
+      {
+        "name": "squadLead",
+        "objectName": "Enemy 3"
+      }
+    ],
+    "NewCutscenes":[
+      {
+        "name": "Kill him",
+        "ActorSerials": [
+          "PSQUAD0",
+          "squadLead"
+        ],
+        "Steps": [
+          {
+            "ActorSerial": "squadLead",
+            "Blurb": "You're not killing us today!"
+          }
+        ]
+      }
+    ]
+  },
+  "Security_Room3": {
+    "Characters": {
+      "C-247863839": {
+        "myFaction": 11,
+        "spawnChatter": {
+          "myChatter": "\n",
+          "secondDelay": 0.2,
+          "amNarrative": false,
+          "playInCombat": true
+        },
+        "myType": "Merc2_Sniper",
+        "WipeDefaultHeld": true,
+        "itemsHeld": [
+          "R_MERC_L RETRO",
+          "None"
+        ]
+      },
+      "C--908024573": {
+        "myName": "Start_Enemy (8)",
+        "myFaction": 11,
+        "alertStatus": 2,
+        "myType": "Merc0_Grunt"
+      },
+      "C-2127817567": {
+        "myFaction": 11,
+        "myType": "Merc0_Grunt",
+        "itemsHeld": [
+          "M_Pipe",
+          "None"
+        ]
+      },
+      "C-1749851196": {
+        "myFaction": 11,
+        "myType": "Merc0_Grunt",
+        "itemsHeld": [
+          "M_Pipewrench",
+          "None"
+        ]
+      },
+      "C--608599556": {
+        "myName": "Start_Enemy (11)",
+        "myFaction": 11,
+        "spawnChatter": {
+          "myChatter": "I'll nail you <i>to the WALL!</i>",
+          "secondDelay": 0.2,
+          "amNarrative": true,
+          "playInCombat": true,
+          "myAnim": "CombatEmote_04_fistPump"
+        },
+        "myType": "Merc3_HvyGunner",
+        "itemsHeld": [
+          "R_MERC_Nailgun",
+          "R_MERC_Nailgun"
+        ]
+      }
+    },
+    "Interactives": {},
+    "Cutscenes": {},
+    "Lockers": {},
+    "Areas": {
+      "N--1610389629": {
+        "mySpeech": [
+          "You go hunt down their reinforments at the back of the building, I'll go hunt down the rest inside here."
+        ]
+      }
+    },
+    "Items": [],
+    "Entrances": {},
+    "NewCharacters": []
+  },
+  "Security_Room3.5": {
+    "Characters": {},
+    "Interactives": {
+      "T--254152554": {
+        "Explosion": "Fireburst",
+        "FailSayLine": "Aw man, this machine is gun and hand proof!",
+        "luaScript": "Invasion/setInteractionState"
+      },
+      "I-1891611779": {
+        "allPurposes": [
+          {
+            "Text_Highlight": "Skim through docs"
+          }
+        ],
+        "RequirementMessage": "Docs are encrypted.",
+        "RestrictionMessage": "Docs are encrypted.",
+        "LinkedObject": "E-1453430287"
+      }
+    },
+    "Cutscenes": {},
+    "Lockers": {},
+    "Areas": {},
+    "Items": [],
+    "Entrances": {
+      "E-1453430287": {
+        "name": "door r3.5 / r3",
+        "disableSpawn": false,
+        "VocationProhibited": 100,
+        "VocationRequirement": 100,
+        "SpawnPoints": 1,
+        "ExitPoints": 1
+      }
+    },
+    "NewCharacters": []
+  },
+  "Security_Room4": {
+    "Characters": {
+      "C-1693458617": {
+        "myFaction": 11,
+        "myType": "Merc1_Zerker",
+        "itemsHeld": [
+          "M_Hammer",
+          "None"
+        ]
+      },
+      "C--424010261": {
+        "myFaction": 11,
+        "myType": "Merc1_Zerker",
+        "itemsHeld": [
+          "M_BatWood",
+          "None"
+        ]
+      },
+      "S--368265433": {
+        "myFaction": 11,
+        "spawnChatter": {
+          "myChatter": "That's him alright! Get'em!",
+          "secondDelay": 1.0,
+          "amNarrative": false,
+          "playInCombat": true
+        },
+        "Wave": {
+          "MaxSquadSize": 3,
+          "MaxUnitCount": 6,
+          "WeaponStock_RandomSeed": 3891173,
+          "UnitTypes": [
+            {
+              "Type": "Merc0_Grunt",
+              "Total": 2,
+              "GenerationScale": 0.0
+            },
+            {
+              "Type": "Merc1_Zerker",
+              "Total": 2,
+              "GenerationScale": 0.555
+            }
+          ],
+          "WeaponStock": [
+            {
+              "Count": 2,
+              "Loadout": "Melee T2"
+            },
+            {
+              "Count": 2,
+              "Loadout": "Melee T4"
+            }
+          ]
+        }
+      },
+      "C-558492232": {
+        "myFaction": 11,
+        "myType": "Merc0_Grunt",
+        "itemsHeld": [
+          "M_Hammer",
+          "None"
+        ]
+      },
+      "C-856072510": {
+        "myFaction": 11,
+        "myType": "Merc2_Sniper",
+        "WipeDefaultHeld": true,
+        "itemsHeld": [
+          "R_Eraser",
+          "None"
+        ]
+      },
+      "C-707123943": {
+        "myFaction": 11,
+        "myType": "Merc0_Grunt_laborer",
+        "itemsHeld": [
+          "M_Ind_Saw",
+          "None"
+        ]
+      },
+      "C--233820948": {
+        "myFaction": 11,
+        "myType": "Merc0_Grunt",
+        "itemsBack": [
+          "R_N911",
+          "None"
+        ]
+      },
+      "C--1052552423": {
+        "myFaction": 11,
+        "myType": "Merc0_Grunt",
+        "itemsBack": [
+          "R_Wrench",
+          "None"
+        ]
+      }
+    },
+    "Interactives": {},
+    "Cutscenes": {},
+    "Lockers": {},
+    "Areas": {
+      "N-395720488": {
+        "mySpeech": [
+          "I was expecting a bit more resistance to us..."
+        ]
+      }
+    },
+    "Items": [],
+    "Entrances": {},
+    "NewCharacters": [
+      {
+        "myName": "Guy",
+        "myFaction": 11,
+        "alertStatus": 2,
+        "spawnChatter": {
+          "myChatter": "There they are!!!",
+          "secondDelay": 0.2,
+          "amNarrative": false,
+          "playInCombat": true
+        },
+        "myType": "Merc0_Grunt",
+        "itemsHeld": [
+          "M_Hammer",
+          "None"
+        ],
+        "position": {
+          "x": 139.23,
+          "y": 34.25,
+          "z": 2.19
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 90.0,
+          "z": 0.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      {
+        "myName": "Guy 2",
+        "myFaction": 11,
+        "alertStatus": 2,
+        "spawnChatter": {
+          "myChatter": "Kill them!",
+          "secondDelay": 0.2,
+          "amNarrative": false,
+          "playInCombat": true
+        },
+        "myType": "Merc2_Sniper",
+        "WipeDefaultHeld": true,
+        "itemsHeld": [
+          "R_Eraser",
+          "None"
+        ],
+        "position": {
+          "x": 146.75,
+          "y": 33.3,
+          "z": 4.3
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 90.0,
+          "z": 0.0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      {
+        "myName": "Guy 3",
+        "myFaction": 11,
+        "alertStatus": 2,
+        "spawnChatter": {
+          "myChatter": "They took yer jarb!!!",
+          "secondDelay": 0.2,
+          "amNarrative": false,
+          "playInCombat": true
+        },
+        "myType": "Merc0_Grunt_Laborer",
+        "itemsHeld": [
+          "M_Ind_Saw",
+          "None"
+        ],
+        "position": {
+          "x": 154.67,
+          "y": 30.29,
+          "z": 4.91
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 90.0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      },
+      {
+        "myName": "Guy 4",
+        "myFaction": 11,
+        "alertStatus": 2,
+        "spawnChatter": {
+          "myChatter": "\n",
+          "secondDelay": 0.2,
+          "amNarrative": false,
+          "playInCombat": true
+        },
+        "myType": "Merc2_Sniper",
+        "WipeDefaultHeld": true,
+        "itemsHeld": [
+          "R_Eraser",
+          "None"
+        ],
+        "position": {
+          "x": 150.03,
+          "y": 28.84,
+          "z": 1.31
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 180.0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        }
+      }
+    ]
+  },
+  "Security_Room4.5": {
+    "Characters": {
+      "C--1604982125": {
+        "spawnChatter": {
+          "myChatter": "Yeah, this will take a while to fix.",
+          "secondDelay": 4.0,
+          "amNarrative": false,
+          "playInCombat": false,
+          "myAnim": "CombatEmote_06_faceWipe"
+        },
+        "myType": "Merc0_Grunt_Laborer",
+        "itemsHeld": [
+          "M_Wrench",
+          "None"
+        ]
+      },
+      "C--996560547": {
+        "spawnChatter": {
+          "myChatter": "Explains how he got through the locks.",
+          "secondDelay": 2.0,
+          "amNarrative": false,
+          "playInCombat": false,
+          "myAnim": "CombatEmote_01_headScratch"
+        },
+        "myType": "Merc0_Grunt_Laborer",
+        "itemsBack": [
+          "M_Pipewrench",
+          "None"
+        ]
+      }
+    },
+    "Interactives": {
+      "T--1724868135": {
+        "FailSayLine": "A screwdriver would help unwind these screws.",
+        "Health": 4
+      }
+    },
+    "Cutscenes": {},
+    "Lockers": {},
+    "Areas": {
+      "N-421839674": {
+        "mySpeech": [
+          "I may need to get creative about this one."
+        ]
+      }
+    },
+    "Items": [
+      {
+        "myItem": "M_Screwdriver",
+        "extraMags": 0,
+        "SerialNumber": "thewrench"
+      }
+    ],
+    "Entrances": {},
+    "NewCharacters": []
+  },
+  "Security_Room9": {
+    "Characters": {},
+    "Interactives": {
+      "I--206121528": {
+        "allPurposes": [
+          {
+            "Popup_Complete": [
+              "<color=yellow>Foreman Log Entry #4792</color>\n\nA notice from management came in earlier today, says that we got a new hire coming in, and has apparently got a good work record.\n\nIn fact his record is <i>SO good</i>, that he's already made <color=white>Employee of the Month</color> before his first day; they even sent us a bunch of placques to hang around the office.\n\nWhat's so great about this guy anyway? He can't be much better than that weirdo who's always hiding the keycard in the fridge. It's gonna be an interesting first day for him I'm sure."
+            ],
+            "Time_Goal": 4.0
+          }
+        ]
+      },
+      "I--1174648120": {
+        "allPurposes": [
+          {
+            "Popup_Complete": [
+              "<color=yellow>Foreman Log Entry #4792</color>\n\nA notice from management came in earlier today, says that we got a new hire coming in, and has apparently got a good work record.\n\nIn fact his record is <i>SO good</i>, that he's already made <color=white>Employee of the Month</color> before his first day; they even sent us a bunch of placques to hang around the office.\n\nWhat's so great about this guy anyway? He can't be much better than that weirdo who's always hiding the keycard in the fridge. It's gonna be an interesting first day for him I'm sure."
+            ],
+            "Time_Goal": 4.0
+          }
+        ]
+      },
+      "I-1408830382": {
+        "Restriction_KeyCard": "Keycard_Gold"
+      }
+    },
+    "Cutscenes": {},
+    "Lockers": {
+      "L-1949399943": {
+        "myItemsStored": [
+          "Keycard_Gold",
+          "M_Bottle",
+          "M_Bottle",
+          "M_Bottle",
+          "M_Bottle",
+          "M_Bottle"
+        ]
+      }
+    },
+    "Areas": {},
+    "Items": [],
+    "Entrances": {},
+    "NewCharacters": []
+  },
+  "Security_Room8": {
+    "Characters": {
+      "S-883526611": {
+        "myFaction": 11,
+        "spawnChatter": {
+          "myChatter": "You ain't putting us out of work! Everyone get'em!",
+          "secondDelay": 1.0,
+          "amNarrative": true,
+          "playInCombat": true
+        },
+        "Wave": {
+          "MaxSquadSize": 4,
+          "MaxUnitCount": 8,
+          "WeaponStock_RandomSeed": 91082733,
+          "UnitTypes": [
+            {
+              "Type": "Merc0_Grunt",
+              "Total": 4,
+              "GenerationScale": 0.0
+            }
+          ],
+          "WeaponStock": [
+            {
+              "Count": 4,
+              "Loadout": "Tools T3 (MERC)"
+            }
+          ]
+        }
+      },
+      "C-536592649": {
+        "myFaction": 11,
+        "myType": "Merc2_Sniper",
+        "itemsHeld": [
+          "R_MERC_L RETRO",
+          "None"
+        ]
+      },
+      "C--1168010402": {
+        "myFaction": 11,
+        "myType": "Merc2_Sniper",
+        "itemsHeld": [
+          "R_MERC_L RETRO",
+          "None"
+        ]
+      },
+      "C--1980522984": {
+        "myFaction": 11,
+        "myType": "Merc1_Zerker",
+        "itemsHeld": [
+          "M_Handaxe",
+          "None"
+        ]
+      }
+    },
+    "Interactives": {
+      "T--2107627298": {
+        "AdvanceStateSound": "event:/Combat/Explosions/Small Blast",
+        "allPurposes": [
+          {
+            "Popup_Complete": [
+              "BZZZT! TAMPERING DETECTED! BONUS LOCKS ENGAGED! BZZZT!"
+            ]
+          }
+        ],
+        "ShowDamageBar": false
+      }
+    },
+    "Cutscenes": {},
+    "Lockers": {},
+    "Areas": {},
+    "Items": [],
+    "Entrances": {},
+    "NewCharacters": []
+  },
+  "Security_Room8.5 POWER": {
+    "Characters": {
+      "C-1954208258": {
+        "myType": "Arena_Bossman_Young",
+        "DisplayedName": "Bossman"
+      }
+    },
+    "Interactives": {},
+    "Cutscenes": {
+      "X-1429679447": {
+        "Steps": [
+          {
+        "Index": 1,
+            "Blurb": "Hey What? Who are you?",
+            "Voice": 8
+          },
+          {
+        "Index": 2,
+            "Blurb": "I'm your relief! It's time to rotate shifts!"
+          },
+          {
+        "Index": 3,
+            "Blurb": "Ah good, it's about time we got some new hands around here. Good to have you on the force, chief!",
+            "Voice": 4
+          },
+          {
+        "Index": 4,
+            "Blurb": "The rest of the staff are out back managing the power grid. I'll have to run you through thems manuals to get you up to speed."
+          },
+          {
+        "Index": 5,
+            "Blurb": "Actually, Corporate's hereby terminated everyone else working this station. Looks like I'll be running a one man show from here on out!"
+          },
+          {
+        "Index": 6,
+            "Blurb": "Are you <b>joking right now?</b> They expect <i>you</i>, a fresh employee to run this station all by yourself? And they'd dare put the rest of us out of work!?",
+            "Emote": "combatEmote_MERC_zerker_hype_1",
+            "Voice": 7
+          },
+          {
+        "Index": 7,
+            "Blurb": "You know what, if this is the thanks I get after running this station all these years, then they can have it. Go ahead and throw those switches over there. That'll show'em!",
+            "Voice": 5
+          }
+        ]
+      },
+      "X--1075758697": {
+        "Steps": [
+          {
+            "Index": 0,
+            "Emote": "Animation_IdleTalk3_faceScratch"
+          },
+          {
+            "Index": 1,
+            "Blurb": "Oh and by the way, you need to go punch in now that you're running the show. Good luck with that, chum!",
+            "Voice": 0
+          }
+        ]
+      }
+    },
+    "Lockers": {},
+    "Areas": {},
+    "Items": [],
+    "Entrances": {},
+    "NewCharacters": []
+  },
+  "Security_Room7": {
+    "Characters": {
+      "S-2082613205": {
+        "myFaction": 11,
+        "spawnChatter": {
+          "myChatter": "There he is! Rough'em up!",
+          "secondDelay": 1.0,
+          "amNarrative": false,
+          "playInCombat": true
+        },
+        "Wave": {
+          "MaxSquadSize": 5,
+          "MaxUnitCount": 8,
+          "WeaponStock_RandomSeed": 2819574,
+          "UnitTypes": [
+            {
+              "Type": "Merc1_Zerker",
+              "Total": 1,
+              "GenerationScale": 0.0
+            },
+            {
+              "Type": "Merc0_Grunt",
+              "Total": 4,
+              "GenerationScale": 0.0
+            }
+          ],
+          "WeaponStock": [
+            {
+              "Count": 3,
+              "Loadout": "Tools T3 (MERC)"
+            },
+            {
+              "Count": 2,
+              "Loadout": "MELEE T4"
+            }
+          ]
+        }
+      }
+    },
+    "Interactives": {},
+    "Cutscenes": {},
+    "Lockers": {},
+    "Areas": {},
+    "Items": [],
+    "Entrances": {},
+    "NewCharacters": []
+  },
+  "Security_Room6": {
+    "Characters": {
+      "S-831703260": {
+        "myFaction": 11,
+        "Wave": {
+          "MaxSquadSize": 6,
+          "MaxUnitCount": 8,
+          "WeaponStock_RandomSeed": 2891157,
+          "UnitTypes": [
+            {
+              "Type": "Merc0_Grunt",
+              "Total": 3,
+              "GenerationScale": 0.0
+            }
+          ],
+          "WeaponStock": [
+            {
+              "Count": 1,
+              "Loadout": "Ranged T2  [Pistol]"
+            },
+            {
+              "Count": 2,
+              "Loadout": "Melee T2"
+            }
+          ]
+        }
+      },
+      "C-1996503351": {
+        "myFaction": 11,
+        "myType": "Merc0_Grunt"
+      },
+      "C-1972937083": {
+        "myFaction": 11,
+        "myType": "Merc0_Grunt_Laborer",
+        "itemsBack": [
+          "M_Crowbar",
+          "None"
+        ]
+      },
+      "C-1030342427": {
+        "myFaction": 11,
+        "myType": "Merc0_Grunt",
+        "itemsHeld": [
+          "M_Pipewrench",
+          "None"
+        ]
+      },
+      "C--1917480982": {
+        "myFaction": 11,
+        "myType": "Merc0_Grunt",
+        "itemsHeld": [
+          "R_N911",
+          "None"
+        ]
+      },
+      "C-715096493": {
+        "myFaction": 11,
+        "myType": "Merc0_Grunt"
+      },
+      "C-124870096": {
+        "myFaction": 11,
+        "myType": "Merc0_Grunt",
+        "itemsBack": [
+          "M_Crowbar",
+          "None"
+        ]
+      }
+    },
+    "Interactives": {},
+    "Cutscenes": {},
+    "Lockers": {},
+    "Areas": {},
+    "Items": [
+      {
+        "myItem": "Revolver_BM38_L",
+        "extraMags": 0,
+        "SerialNumber": ""
+      }
+    ],
+    "Entrances": {},
+    "NewCharacters": []
+  },
+  "Security_Room5": {
+    "Characters": {
+      "C-1057674782": {
+        "myFaction": 11,
+        "myType": "Merc0_Grunt",
+        "itemsHeld": [
+          "R_Shot_Ultralite",
+          "None"
+        ]
+      },
+      "C-218308959": {
+        "myFaction": 11,
+        "myType": "Merc0_Grunt",
+        "itemsHeld": [
+          "M_Crowbar",
+          "None"
+        ]
+      },
+      "C--302149356": {
+        "myFaction": 11,
+        "myType": "Merc0_Grunt",
+        "itemsHeld": [
+          "M_Ind_Saw",
+          "None"
+        ]
+      },
+      "C--1218371799": {
+        "myFaction": 11,
+        "myType": "Merc0_Grunt",
+        "itemsHeld": [
+          "M_Bat",
+          "None"
+        ]
+      },
+      "C--613876074": {
+        "myFaction": 11,
+        "myType": "Merc0_Grunt",
+        "itemsBack": [
+          "M_Hammer",
+          "None"
+        ]
+      },
+      "C--1617779571": {
+        "myFaction": 11,
+        "myType": "Merc0_Grunt",
+        "itemsBack": [
+          "M_KitchenKnife",
+          "None"
+        ]
+      },
+      "C-750564223": {
+        "myFaction": 11,
+        "myType": "Merc1_Zerker",
+        "itemsBack": [
+          "M_BatWood",
+          "None"
+        ]
+      }
+    },
+    "Interactives": {},
+    "Cutscenes": {},
+    "Lockers": {},
+    "Areas": {},
+    "Items": [],
+    "Entrances": {},
+    "NewCharacters": []
+  }
+}
