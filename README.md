@@ -5,7 +5,9 @@
 ## Intro
 Welcome to Lua for NEM. A mod that adds lua to NEM along with some cool other features.
 ## Setup
-First drag the Assembly-CSharp.dll and MoonSharp.Interpreter.dll into (your M:PN folder)/Madness Project Nexus_Data/Managed folder.
+First download the zip file from the latest release and extract it.
+
+Then drag the Assembly-CSharp.dll and MoonSharp.Interpreter.dll into (your M:PN folder)/Madness Project Nexus_Data/Managed folder.
 
 Then in you're custom stuff folder (if you do not have it, then you will need to install NEM, then go back to step 1) create a lua, cutscenes, models, and audio folder inside of it.
 
